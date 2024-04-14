@@ -34,7 +34,8 @@ SRC_FILES=\
   src/radix_sort.c \
   src/selection_sort.c \
   test/Test.c \
-  test/AlgorithmComplexityInputTests.c \
+  test/AlgorithmParameterTests.c \
+  test/ComplexityParameterTests.c \
   test/LenghtParameterTests.c \
   test/test_runners/Test_Runner.c \
   test/test_runners/all_tests.c

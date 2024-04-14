@@ -2,18 +2,18 @@
 #include "unity.h"
 #include "unity_fixture.h"
 
-TEST_GROUP(AlgorithmComplexityInputTests);
+TEST_GROUP(ComplexityParameterTests);
 
-TEST_SETUP(AlgorithmComplexityInputTests)
+TEST_SETUP(ComplexityParameterTests)
 {
 }
 
-TEST_TEAR_DOWN(AlgorithmComplexityInputTests)
+TEST_TEAR_DOWN(ComplexityParameterTests)
 {
 }
 
 // COUNTING ALGORITHM
-TEST(AlgorithmComplexityInputTests, test_counting_withRightComplexity_On)
+TEST(ComplexityParameterTests, test_counting_withRightComplexity_On)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -24,7 +24,7 @@ TEST(AlgorithmComplexityInputTests, test_counting_withRightComplexity_On)
   TEST_ASSERT_EQUAL(expectedSuccess, sort(arr, size, complexity, algorithm));
 }
 
-TEST(AlgorithmComplexityInputTests, test_counting_withWrongComplexity_On2)
+TEST(ComplexityParameterTests, test_counting_withWrongComplexity_On2)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -35,7 +35,7 @@ TEST(AlgorithmComplexityInputTests, test_counting_withWrongComplexity_On2)
   TEST_ASSERT_EQUAL(expectedFail, sort(arr, size, complexity, algorithm));
 }
 
-TEST(AlgorithmComplexityInputTests, test_counting_withWrongComplexity_Onlogn)
+TEST(ComplexityParameterTests, test_counting_withWrongComplexity_Onlogn)
 {
   int size = 5;
   int arr[] = {10, 4, 23, 3, 1};
@@ -47,7 +47,7 @@ TEST(AlgorithmComplexityInputTests, test_counting_withWrongComplexity_Onlogn)
 }
 
 // RADIX ALGORITHM
-TEST(AlgorithmComplexityInputTests, test_radix_withRightComplexity_On)
+TEST(ComplexityParameterTests, test_radix_withRightComplexity_On)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -58,7 +58,7 @@ TEST(AlgorithmComplexityInputTests, test_radix_withRightComplexity_On)
   TEST_ASSERT_EQUAL(expectedSuccess, sort(arr, size, complexity, algorithm));
 }
 
-TEST(AlgorithmComplexityInputTests, test_radix_withWrongComplexity_On2)
+TEST(ComplexityParameterTests, test_radix_withWrongComplexity_On2)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -69,7 +69,7 @@ TEST(AlgorithmComplexityInputTests, test_radix_withWrongComplexity_On2)
   TEST_ASSERT_EQUAL(expectedFail, sort(arr, size, complexity, algorithm));
 }
 
-TEST(AlgorithmComplexityInputTests, test_radix_withWrongComplexity_Onlogn)
+TEST(ComplexityParameterTests, test_radix_withWrongComplexity_Onlogn)
 {
   int size = 5;
   int arr[] = {10, 4, 23, 3, 1};
@@ -81,7 +81,7 @@ TEST(AlgorithmComplexityInputTests, test_radix_withWrongComplexity_Onlogn)
 }
 
 // BUBBLE ALGORITHM
-TEST(AlgorithmComplexityInputTests, test_bubble_withRightComplexity_On2)
+TEST(ComplexityParameterTests, test_bubble_withRightComplexity_On2)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -92,7 +92,7 @@ TEST(AlgorithmComplexityInputTests, test_bubble_withRightComplexity_On2)
   TEST_ASSERT_EQUAL(expectedSuccess, sort(arr, size, complexity, algorithm));
 }
 
-TEST(AlgorithmComplexityInputTests, test_bubble_withWrongComplexity_On)
+TEST(ComplexityParameterTests, test_bubble_withWrongComplexity_On)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -103,7 +103,7 @@ TEST(AlgorithmComplexityInputTests, test_bubble_withWrongComplexity_On)
   TEST_ASSERT_EQUAL(expectedFail, sort(arr, size, complexity, algorithm));
 }
 
-TEST(AlgorithmComplexityInputTests, test_bubble_withWrongComplexity_Onlogn)
+TEST(ComplexityParameterTests, test_bubble_withWrongComplexity_Onlogn)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -115,7 +115,7 @@ TEST(AlgorithmComplexityInputTests, test_bubble_withWrongComplexity_Onlogn)
 }
 
 // INSERTION ALGORITHM
-TEST(AlgorithmComplexityInputTests, test_insertion_withRightComplexity_On2)
+TEST(ComplexityParameterTests, test_insertion_withRightComplexity_On2)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -126,7 +126,7 @@ TEST(AlgorithmComplexityInputTests, test_insertion_withRightComplexity_On2)
   TEST_ASSERT_EQUAL(expectedSuccess, sort(arr, size, complexity, algorithm));
 }
 
-TEST(AlgorithmComplexityInputTests, test_insertion_withWrongComplexity_On)
+TEST(ComplexityParameterTests, test_insertion_withWrongComplexity_On)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -137,7 +137,7 @@ TEST(AlgorithmComplexityInputTests, test_insertion_withWrongComplexity_On)
   TEST_ASSERT_EQUAL(expectedFail, sort(arr, size, complexity, algorithm));
 }
 
-TEST(AlgorithmComplexityInputTests, test_insertion_withWrongComplexity_Onlogn)
+TEST(ComplexityParameterTests, test_insertion_withWrongComplexity_Onlogn)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -149,7 +149,7 @@ TEST(AlgorithmComplexityInputTests, test_insertion_withWrongComplexity_Onlogn)
 }
 
 // SELECTION ALGORITHM
-TEST(AlgorithmComplexityInputTests, test_selection_withRightComplexity_On2)
+TEST(ComplexityParameterTests, test_selection_withRightComplexity_On2)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -160,7 +160,7 @@ TEST(AlgorithmComplexityInputTests, test_selection_withRightComplexity_On2)
   TEST_ASSERT_EQUAL(expectedSuccess, sort(arr, size, complexity, algorithm));
 }
 
-TEST(AlgorithmComplexityInputTests, test_selection_withWrongComplexity_On)
+TEST(ComplexityParameterTests, test_selection_withWrongComplexity_On)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -171,7 +171,7 @@ TEST(AlgorithmComplexityInputTests, test_selection_withWrongComplexity_On)
   TEST_ASSERT_EQUAL(expectedFail, sort(arr, size, complexity, algorithm));
 }
 
-TEST(AlgorithmComplexityInputTests, test_selection_withWrongComplexity_Onlogn)
+TEST(ComplexityParameterTests, test_selection_withWrongComplexity_Onlogn)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -183,7 +183,7 @@ TEST(AlgorithmComplexityInputTests, test_selection_withWrongComplexity_Onlogn)
 }
 
 // HEAP ALGORITHM
-TEST(AlgorithmComplexityInputTests, test_heap_withRightComplexity_Onlogn)
+TEST(ComplexityParameterTests, test_heap_withRightComplexity_Onlogn)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -194,7 +194,7 @@ TEST(AlgorithmComplexityInputTests, test_heap_withRightComplexity_Onlogn)
   TEST_ASSERT_EQUAL(expectedSuccess, sort(arr, size, complexity, algorithm));
 }
 
-TEST(AlgorithmComplexityInputTests, test_heap_withWrongComplexity_On)
+TEST(ComplexityParameterTests, test_heap_withWrongComplexity_On)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -205,7 +205,7 @@ TEST(AlgorithmComplexityInputTests, test_heap_withWrongComplexity_On)
   TEST_ASSERT_EQUAL(expectedFail, sort(arr, size, complexity, algorithm));
 }
 
-TEST(AlgorithmComplexityInputTests, test_heap_withWrongComplexity_On2)
+TEST(ComplexityParameterTests, test_heap_withWrongComplexity_On2)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -217,7 +217,7 @@ TEST(AlgorithmComplexityInputTests, test_heap_withWrongComplexity_On2)
 }
 
 // MERGE ALGORITHM
-TEST(AlgorithmComplexityInputTests, test_merge_withRightComplexity_Onlogn)
+TEST(ComplexityParameterTests, test_merge_withRightComplexity_Onlogn)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -228,7 +228,7 @@ TEST(AlgorithmComplexityInputTests, test_merge_withRightComplexity_Onlogn)
   TEST_ASSERT_EQUAL(expectedSuccess, sort(arr, size, complexity, algorithm));
 }
 
-TEST(AlgorithmComplexityInputTests, test_merge_withWrongComplexity_On)
+TEST(ComplexityParameterTests, test_merge_withWrongComplexity_On)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -239,7 +239,7 @@ TEST(AlgorithmComplexityInputTests, test_merge_withWrongComplexity_On)
   TEST_ASSERT_EQUAL(expectedFail, sort(arr, size, complexity, algorithm));
 }
 
-TEST(AlgorithmComplexityInputTests, test_merge_withWrongComplexity_On2)
+TEST(ComplexityParameterTests, test_merge_withWrongComplexity_On2)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -251,7 +251,7 @@ TEST(AlgorithmComplexityInputTests, test_merge_withWrongComplexity_On2)
 }
 
 // QUICK ALGORITHM
-TEST(AlgorithmComplexityInputTests, test_quick_withRightComplexity_Onlogn)
+TEST(ComplexityParameterTests, test_quick_withRightComplexity_Onlogn)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -262,7 +262,7 @@ TEST(AlgorithmComplexityInputTests, test_quick_withRightComplexity_Onlogn)
   TEST_ASSERT_EQUAL(expectedSuccess, sort(arr, size, complexity, algorithm));
 }
 
-TEST(AlgorithmComplexityInputTests, test_quick_withWrongComplexity_On)
+TEST(ComplexityParameterTests, test_quick_withWrongComplexity_On)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -273,7 +273,7 @@ TEST(AlgorithmComplexityInputTests, test_quick_withWrongComplexity_On)
   TEST_ASSERT_EQUAL(expectedFail, sort(arr, size, complexity, algorithm));
 }
 
-TEST(AlgorithmComplexityInputTests, test_quick_withWrongComplexity_On2)
+TEST(ComplexityParameterTests, test_quick_withWrongComplexity_On2)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -285,7 +285,7 @@ TEST(AlgorithmComplexityInputTests, test_quick_withWrongComplexity_On2)
 }
 
 // NON EXISTING COMPLEXITY (DEFAULT CASE)
-TEST(AlgorithmComplexityInputTests, test_counting_withWrongComplexity_nonExistingCase)
+TEST(ComplexityParameterTests, test_counting_withWrongComplexity_nonExistingCase)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -296,7 +296,7 @@ TEST(AlgorithmComplexityInputTests, test_counting_withWrongComplexity_nonExistin
   TEST_ASSERT_EQUAL(expectedError, sort(arr, size, complexity, algorithm));
 }
 
-TEST(AlgorithmComplexityInputTests, test_radix_withWrongComplexity_nonExistingCase)
+TEST(ComplexityParameterTests, test_radix_withWrongComplexity_nonExistingCase)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -307,7 +307,7 @@ TEST(AlgorithmComplexityInputTests, test_radix_withWrongComplexity_nonExistingCa
   TEST_ASSERT_EQUAL(expectedError, sort(arr, size, complexity, algorithm));
 }
 
-TEST(AlgorithmComplexityInputTests, test_bubble_withWrongComplexity_nonExistingCase)
+TEST(ComplexityParameterTests, test_bubble_withWrongComplexity_nonExistingCase)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -318,7 +318,7 @@ TEST(AlgorithmComplexityInputTests, test_bubble_withWrongComplexity_nonExistingC
   TEST_ASSERT_EQUAL(expectedError, sort(arr, size, complexity, algorithm));
 }
 
-TEST(AlgorithmComplexityInputTests, test_insertion_withWrongComplexity_nonExistingCase)
+TEST(ComplexityParameterTests, test_insertion_withWrongComplexity_nonExistingCase)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -329,7 +329,7 @@ TEST(AlgorithmComplexityInputTests, test_insertion_withWrongComplexity_nonExisti
   TEST_ASSERT_EQUAL(expectedError, sort(arr, size, complexity, algorithm));
 }
 
-TEST(AlgorithmComplexityInputTests, test_selection_withWrongComplexity_nonExistingCase)
+TEST(ComplexityParameterTests, test_selection_withWrongComplexity_nonExistingCase)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -340,7 +340,7 @@ TEST(AlgorithmComplexityInputTests, test_selection_withWrongComplexity_nonExisti
   TEST_ASSERT_EQUAL(expectedError, sort(arr, size, complexity, algorithm));
 }
 
-TEST(AlgorithmComplexityInputTests, test_heap_withWrongComplexity_nonExistingCase)
+TEST(ComplexityParameterTests, test_heap_withWrongComplexity_nonExistingCase)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -351,7 +351,7 @@ TEST(AlgorithmComplexityInputTests, test_heap_withWrongComplexity_nonExistingCas
   TEST_ASSERT_EQUAL(expectedError, sort(arr, size, complexity, algorithm));
 }
 
-TEST(AlgorithmComplexityInputTests, test_merge_withWrongComplexity_nonExistingCase)
+TEST(ComplexityParameterTests, test_merge_withWrongComplexity_nonExistingCase)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
@@ -362,35 +362,12 @@ TEST(AlgorithmComplexityInputTests, test_merge_withWrongComplexity_nonExistingCa
   TEST_ASSERT_EQUAL(expectedError, sort(arr, size, complexity, algorithm));
 }
 
-TEST(AlgorithmComplexityInputTests, test_quick_withWrongComplexity_nonExistingCase)
+TEST(ComplexityParameterTests, test_quick_withWrongComplexity_nonExistingCase)
 {
   int arr[] = {10, 4, 23, 3, 1};
   int size = 5;
   char complexity[] = "NonExistingComplexity";
   int algorithm = QUICK;
-  int expectedError = 1;
-
-  TEST_ASSERT_EQUAL(expectedError, sort(arr, size, complexity, algorithm));
-}
-
-// NON EXISTING ALGORITHM (DEFAULT CASE)
-TEST(AlgorithmComplexityInputTests, test_algorithm_withNonExistingCase_positive)
-{
-  int arr[] = {10, 4, 23, 3, 1};
-  int size = 5;
-  char complexity[] = "On";
-  int algorithm = 8;
-  int expectedError = 1;
-
-  TEST_ASSERT_EQUAL(expectedError, sort(arr, size, complexity, algorithm));
-}
-
-TEST(AlgorithmComplexityInputTests, test_algorithm_withNonExistingCase_negative)
-{
-  int arr[] = {10, 4, 23, 3, 1};
-  int size = 5;
-  char complexity[] = "On";
-  int algorithm = -1;
   int expectedError = 1;
 
   TEST_ASSERT_EQUAL(expectedError, sort(arr, size, complexity, algorithm));

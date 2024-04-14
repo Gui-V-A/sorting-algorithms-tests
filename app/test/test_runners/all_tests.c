@@ -3,7 +3,8 @@
 static void RunAllTests(void)
 {
   RUN_TEST_GROUP(Foo);
-  RUN_TEST_GROUP(AlgorithmComplexityInputTests);
+  RUN_TEST_GROUP(ComplexityParameterTests);
+  RUN_TEST_GROUP(AlgorithmParameterTests);
   RUN_TEST_GROUP(LenghtParameterTests);
 }
 

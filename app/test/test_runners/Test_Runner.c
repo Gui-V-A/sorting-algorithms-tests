@@ -1,0 +1,46 @@
+#include "unity.h"
+#include "unity_fixture.h"
+
+TEST_GROUP_RUNNER(Foo)
+{
+  RUN_TEST_CASE(Foo, TestSort1);
+  RUN_TEST_CASE(Foo, TestFoo2);
+}
+
+TEST_GROUP_RUNNER(AlgorithmComplexityInputTests)
+{
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_counting_withRightComplexity_On);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_counting_withWrongComplexity_On2);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_counting_withWrongComplexity_Onlogn);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_radix_withRightComplexity_On);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_radix_withWrongComplexity_On2);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_radix_withWrongComplexity_Onlogn);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_bubble_withRightComplexity_On2);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_bubble_withWrongComplexity_On);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_bubble_withWrongComplexity_Onlogn);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_insertion_withRightComplexity_On2);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_insertion_withWrongComplexity_On);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_insertion_withWrongComplexity_Onlogn);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_selection_withRightComplexity_On2);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_selection_withWrongComplexity_On);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_selection_withWrongComplexity_Onlogn);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_heap_withRightComplexity_Onlogn);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_heap_withWrongComplexity_On);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_heap_withWrongComplexity_On2);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_merge_withRightComplexity_Onlogn);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_merge_withWrongComplexity_On);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_merge_withWrongComplexity_On2);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_quick_withRightComplexity_Onlogn);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_quick_withWrongComplexity_On);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_quick_withWrongComplexity_On2);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_counting_withWrongComplexity_nonExistingCase);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_radix_withWrongComplexity_nonExistingCase);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_bubble_withWrongComplexity_nonExistingCase);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_insertion_withWrongComplexity_nonExistingCase);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_selection_withWrongComplexity_nonExistingCase);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_heap_withWrongComplexity_nonExistingCase);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_merge_withWrongComplexity_nonExistingCase);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_quick_withWrongComplexity_nonExistingCase);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_algorithm_withNonExistingCase_positive);
+  RUN_TEST_CASE(AlgorithmComplexityInputTests, test_algorithm_withNonExistingCase_negative);
+}

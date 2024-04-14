@@ -44,3 +44,11 @@ TEST_GROUP_RUNNER(AlgorithmComplexityInputTests)
   RUN_TEST_CASE(AlgorithmComplexityInputTests, test_algorithm_withNonExistingCase_positive);
   RUN_TEST_CASE(AlgorithmComplexityInputTests, test_algorithm_withNonExistingCase_negative);
 }
+
+TEST_GROUP_RUNNER(LenghtParameterTests)
+{
+  RUN_TEST_CASE(LenghtParameterTests, test_vectorLenght_smallerThan_minLimit);
+  RUN_TEST_CASE(LenghtParameterTests, test_vectorLenght_equalThan_minLimit);
+  RUN_TEST_CASE(LenghtParameterTests, test_vectorLenght_equalThan_maxLimit)
+  RUN_TEST_CASE(LenghtParameterTests, test_vectorLenght_greaterThan_maxLimit)
+}

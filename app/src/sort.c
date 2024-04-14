@@ -66,10 +66,3 @@ int sort(int* a, int length, char* type, int algorithm) {
     free(s);
     return status;
 }
-/*
-int main(void) {
-    int arr[5] = {10, 4, 23, 3, 1};
-    char str[] = "On";
-    return sort(arr, 5, str, 0);
-}
-*/

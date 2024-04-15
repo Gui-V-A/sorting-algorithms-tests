@@ -16,7 +16,7 @@ jobs:
     - name: go to /app
       run: cd app
     - name: make
-      run: make
+      run: make all
 
   cppcheck:
 
@@ -31,7 +31,7 @@ jobs:
     - name: go to /app
       run: cd app
     - name: run cppcheck
-      run: make cppcheck
+      run: cppcheck --enable=all --suppress=missingIncludeSystem --suppress=unusedFunction $(INC_DIRS) src/sort.c
 
   valgrind:
 

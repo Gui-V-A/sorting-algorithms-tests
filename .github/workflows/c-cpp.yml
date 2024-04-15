@@ -12,15 +12,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: update
-      run: sudo apt-get update
-    - name: install cppcheck
-      run: sudo apt-get install cppcheck
-    - name: install valgrind
-      run: sudo apt-get install valgrind
+    - name: go to /app
+      run: cd app
     - name: make
-      run: cd app && make
+      run: make
 
   cppcheck:
 

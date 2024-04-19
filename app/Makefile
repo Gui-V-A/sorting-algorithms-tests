@@ -2,6 +2,7 @@
 
 GCC_COMPILER=gcc
 CLANG_COMPILER=clang
+SHELL=/bin/bash
 
 UNITY_ROOT=../Unity
 

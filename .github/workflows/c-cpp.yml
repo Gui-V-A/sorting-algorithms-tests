@@ -15,3 +15,39 @@ jobs:
       run: ls
     - name: make
       run: cd app && make all
+
+  cppcheck:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: update
+      run: sudo apt-get update
+    - name: install cppcheck
+      run: sudo apt-get install cppcheck
+    - name: run cppcheck
+      run: cd app && make cppcheck
+
+  valgrind:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: update
+      run: sudo apt-get update
+    - name: install valgrind
+      run: sudo apt-get install valgrind
+    - name: run valgrind
+      run: cd app && make valgrind
+
+  sanitizer:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: run sanitizer
+      run: cd app && make sanitizer
+
+  coverage:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: run gcov
+      run: cd app && make cov

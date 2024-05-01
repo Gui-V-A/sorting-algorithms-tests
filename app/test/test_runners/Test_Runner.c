@@ -77,3 +77,9 @@ TEST_GROUP_RUNNER(SortBehaviorTests)
   RUN_TEST_CASE(SortBehaviorTests, test_quickSort_withMinArraySize);
   RUN_TEST_CASE(SortBehaviorTests, test_quickSort_withMaxArraySize);
 }
+
+TEST_GROUP_RUNNER(CoverageTests)
+{
+  RUN_TEST_CASE(CoverageTests, test);
+}
+

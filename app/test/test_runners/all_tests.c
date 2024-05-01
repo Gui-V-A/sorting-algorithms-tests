@@ -7,6 +7,7 @@ static void RunAllTests(void)
   RUN_TEST_GROUP(AlgorithmParameterTests);
   RUN_TEST_GROUP(LenghtParameterTests);
   RUN_TEST_GROUP(SortBehaviorTests);
+  RUN_TEST_GROUP(CoverageTests);
 }
 
 int main(int argc, const char * argv[])

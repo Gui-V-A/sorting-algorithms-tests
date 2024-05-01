@@ -36,6 +36,7 @@ SRC_FILES=\
   test/ComplexityParameterTests.c \
   test/LenghtParameterTests.c \
   test/SortBehaviorTests.c \
+  test/CoverageTests.c \
   test/test_runners/Test_Runner.c \
   test/test_runners/all_tests.c
 INC_DIRS=-Isrc -I$(UNITY_ROOT)/src -I$(UNITY_ROOT)/extras/fixture/src

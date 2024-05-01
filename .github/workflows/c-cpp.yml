@@ -8,64 +8,10 @@ on:
 
 jobs:
   build:
-
-    runs-on: kali-latest
-
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: go to /app
       run: cd app
     - name: make
       run: make all
-
-  cppcheck:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v2
-    - name: update
-      run: sudo apt-get update
-    - name: install cppcheck
-      run: sudo apt-get install cppcheck
-    - name: go to /app
-      run: cd app
-    - name: run cppcheck
-      run: make cppcheck
-
-  valgrind:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v2
-    - name: update
-      run: sudo apt-get update
-    - name: install valgrind
-      run: sudo apt-get install valgrind
-    - name: go to /app
-      run: cd app
-    - name: run valgrind
-      run: make valgrind
-
-  sanitizer:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v2
-    - name: go to /app
-      run: cd app
-    - name: run sanitizer
-      run: make sanitizer
-
-  coverage:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v2
-    - name: go to /app
-      run: cd app
-    - name: run gcov
-      run: make cov

@@ -10,7 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: list
       run: ls
     - name: make
@@ -19,7 +19,7 @@ jobs:
   cppcheck:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: update
       run: sudo apt-get update
     - name: install cppcheck
@@ -30,7 +30,7 @@ jobs:
   valgrind:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: update
       run: sudo apt-get update
     - name: install valgrind
@@ -41,15 +41,15 @@ jobs:
   sanitizer:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: run sanitizer
       run: cd app && make sanitizer
 
   coverage:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: install gcovr
       run: sudo pip3 install gcovr
-    - name: run gcov
+    - name: run gcov and gcovr
       run: cd app && make cov

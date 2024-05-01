@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: go to /app
-      run: cd app
+    - name: list
+      run: ls
     - name: make
-      run: make all
+      run: cd app && make all

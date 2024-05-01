@@ -1,8 +1,5 @@
-# Author: Rafael Garibotti
-
 GCC_COMPILER=gcc
 CLANG_COMPILER=clang
-SHELL=/bin/bash
 
 UNITY_ROOT=../Unity
 
@@ -38,6 +35,7 @@ SRC_FILES=\
   test/AlgorithmParameterTests.c \
   test/ComplexityParameterTests.c \
   test/LenghtParameterTests.c \
+  test/SortBehaviorTests.c \
   test/test_runners/Test_Runner.c \
   test/test_runners/all_tests.c
 INC_DIRS=-Isrc -I$(UNITY_ROOT)/src -I$(UNITY_ROOT)/extras/fixture/src
@@ -72,7 +70,7 @@ sanitizer:
 cov:
 	$(GCC_COMPILER) $(CFLAGS) -fprofile-arcs -ftest-coverage $(INC_DIRS) $(SRC_FILES) -o $(TARGET)
 	./$(TARGET) -v
-	gcov -b *.gcno *.gcda
+	gcov -b *.gcno
 	gcovr
 
 sort:

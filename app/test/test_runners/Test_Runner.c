@@ -57,3 +57,23 @@ TEST_GROUP_RUNNER(LenghtParameterTests)
   RUN_TEST_CASE(LenghtParameterTests, test_vectorLenght_equalThan_maxLimit)
   RUN_TEST_CASE(LenghtParameterTests, test_vectorLenght_greaterThan_maxLimit)
 }
+
+TEST_GROUP_RUNNER(SortBehaviorTests)
+{
+  RUN_TEST_CASE(SortBehaviorTests, test_countingSort_withMinArraySize);
+  RUN_TEST_CASE(SortBehaviorTests, test_countingSort_withMaxArraySize);
+  RUN_TEST_CASE(SortBehaviorTests, test_bubbleSort_withMinArraySize);
+  RUN_TEST_CASE(SortBehaviorTests, test_bubbleSort_withMaxArraySize);
+  RUN_TEST_CASE(SortBehaviorTests, test_insertionSort_withMinArraySize);
+  RUN_TEST_CASE(SortBehaviorTests, test_insertionSort_withMaxArraySize);
+  RUN_TEST_CASE(SortBehaviorTests, test_radixSort_withMinArraySize);
+  RUN_TEST_CASE(SortBehaviorTests, test_radixSort_withMaxArraySize);
+  RUN_TEST_CASE(SortBehaviorTests, test_selectionSort_withMinArraySize);
+  RUN_TEST_CASE(SortBehaviorTests, test_selectionSort_withMaxArraySize);
+  RUN_TEST_CASE(SortBehaviorTests, test_heapSort_withMinArraySize);
+  RUN_TEST_CASE(SortBehaviorTests, test_heapSort_withMaxArraySize);
+  RUN_TEST_CASE(SortBehaviorTests, test_mergeSort_withMinArraySize);
+  RUN_TEST_CASE(SortBehaviorTests, test_mergeSort_withMaxArraySize);
+  RUN_TEST_CASE(SortBehaviorTests, test_quickSort_withMinArraySize);
+  RUN_TEST_CASE(SortBehaviorTests, test_quickSort_withMaxArraySize);
+}

@@ -49,5 +49,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: install gcovr
+      run: sudo pip3 install gcovr
     - name: run gcov
       run: cd app && make cov
